@@ -10,7 +10,7 @@ import static jm.task.core.jdbc.util.Util.getConnection;
 
 public class UserDaoJDBCImpl implements UserDao {
 
-    Connection connection = getConnection();
+    private final Connection connection = getConnection();
 
     public UserDaoJDBCImpl() {
 
